@@ -1,0 +1,66 @@
+/*This gives the page a background and formats is so that it will cover the entire srceen. I also added the syntax so that it will work on ohter browsers*/
+
+#bg {
+    height: 1080px;
+    width: 100%;
+    background: url(../images/john_1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*This gives styles to the main body title font and moves it down the screen*/
+
+#wrapper {
+    margin: auto;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10%;
+    font-family: helvetica;
+    font-size: 300%;
+    line-height: 70px;
+}
+
+
+/* This gives the title assignments a differnt font weight to the rest of the list */
+
+p {
+    font-weight: 600;
+    font-size: 140%
+}
+
+
+/* This makes the nav that cotians all of the list items. I put it on the side so that the number of tasks can increse without having to radicaly redesign the nav. It also adds styling such as color and font families */
+
+nav {
+    background: #0e0219;
+    border-radius: 40px;
+    height: 1080px;
+    width: 20%;
+    float: left;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: white;
+    opacity: 0.95;
+    border-style: ridge;
+    margin-left: 20px;
+}
+
+
+/* This stlyes the list so that there are no bullet point and the font is the size I want */
+
+ul#nav1 {
+    list-style-type: none;
+    font-size: 120%;
+    line-height: 32px;
+}
+
+
+/* This gives the list items a hover color to indicate that the item is being selected */
+
+ul#nav1>li:hover {
+    color: #1adfef
+}
