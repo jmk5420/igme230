@@ -1,0 +1,46 @@
+/* "*" means that it will be used on all elements of the page*/
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+p,
+li {
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+
+.subhead {
+    font-size: 80%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1,
+h2 {
+    font-family: serif;
+    border-bottom: 1px solid #a2a9b1;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: .2em;
+}
+
+#infobox {
+    text-align: center;
+    width 250px;
+    border: 1px solid #a2a9b1;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
