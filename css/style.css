@@ -64,3 +64,17 @@ ul#nav1 {
 ul#nav1>li:hover {
     color: #1adfef
 }
+
+
+/* Gets rid of underlines on links*/
+
+a {
+    text-decoration: none;
+}
+
+
+/* Makes underline when hovering over link*/
+
+a:hover {
+    border-bottom: 1px solid;
+}
