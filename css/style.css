@@ -13,7 +13,7 @@
 
 /*This gives styles to the main body title font and moves it down the screen*/
 
-#wrapper {
+.wrapper {
     margin: auto;
     height: 100%;
     color: #ffffff;
@@ -29,7 +29,8 @@
 
 p {
     font-weight: 600;
-    font-size: 140%
+    font-size: 190%;
+    text-decoration-line: underline;
 }
 
 
@@ -39,7 +40,7 @@ nav {
     background: #0e0219;
     border-radius: 10px 40px 40px 10px;
     height: 1080px;
-    width: 21%;
+    width: 35%;
     float: left;
     font-family: sans-serif;
     font-weight: 200;
@@ -53,7 +54,7 @@ nav {
 
 /* This stlyes the list so that there are no bullet point and the font is the size I want */
 
-ul#nav1 {
+ul.nav1 {
     list-style-type: none;
     font-size: 120%;
     line-height: 32px;
@@ -63,8 +64,16 @@ ul#nav1 {
 
 /* This gives the list items a hover color to indicate that the item is being selected */
 
-ul#nav1>li:hover {
+ul.nav1>li:hover {
     color: #1adfef
+}
+
+
+/* This Moves the project list to the left side of the nav as well as moving it to the top of the page*/
+
+div {
+    display: inline-block;
+    float: left;
 }
 
 
