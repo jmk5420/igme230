@@ -20,7 +20,7 @@
     text-align: center;
     padding-top: 10%;
     font-family: helvetica;
-    font-size: 300%;
+    font-size: 220%;
     line-height: 70px;
 }
 
@@ -29,7 +29,7 @@
 
 p {
     font-weight: 600;
-    font-size: 190%;
+    font-size: 130%;
     text-decoration-line: underline;
 }
 
@@ -56,7 +56,7 @@ nav {
 
 ul.nav1 {
     list-style-type: none;
-    font-size: 120%;
+    font-size: 100%;
     line-height: 32px;
     margin-left: 40px;
 }
