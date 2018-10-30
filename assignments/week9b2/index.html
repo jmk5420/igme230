@@ -30,6 +30,7 @@
             font-weight: bold;
             font-size: 1.2em;
         }
+
     </style>
 </head>
 
@@ -49,24 +50,21 @@
         let currColor;
         document.getElementById('colorButton').onclick = submitColor;
         for (let i = 0; i < 3; i++) {
-            console.log(radios[i]);
             radios[i].onclick = pickColor;
         }
 
         function pickColor() {
-            console.log("reached");
             document.querySelector('#info').innerHTML = "You have selected the color " + this.value;
             currColor = this.value;
         }
 
         function submitColor() {
             document.querySelector('#info').innerHTML = "Your final choice is " + currColor;
-            let colorForm = document.getElementById('colorForm');
-            let legend = colorForm.getAttribute('legend');
+            let colorForm = document.getElementById('colorForm'); //Selects whole div
+            let legend = document.querySelector("legend"); //selects first ledgend element
             legend.style.color = currColor;
-            console.log(legend);
-            console.log(currColor);
         }
+
     </script>
 </body>
 
