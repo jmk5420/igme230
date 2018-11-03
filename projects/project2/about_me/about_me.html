@@ -2,35 +2,65 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="/projects/project2/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
     <title>Keefe Project 2</title>
+
 </head>
 
 <body>
     <nav>
-        <p>Portfolio</p>
-        <p>Contact</p>
-        <p>3D Blog</p>
-        <p>Resume</p>
-        <p>About Me</p>
-    </nav>
-    <img src="/images/john_1.jpg">
-    <h2>Hello</h2>
-    <p>My name is John Keefe and I am an aspiring UX/UI and motion designer in Rochester NY. I am currently in my 3rd year at the Rochester Institute of Technology in New Media Design.</p>
-    <p>I got my start with free design software when I was going to high school in New Hampshire. But I worked my way to paying for actually design equipment and now have a stronger focus on animation and UX/UI. I’m a big fan of older design trends such as vaporwave and the MTV era of design.</p>
-    <h2>Interests </h2>
-    <ul>
-        <li>Skiing</li>
-        <li>Hiking</li>
-        <li>Cooking</li>
-        <li>Science</li>
-        <li>Photography</li>
-        <li>Memes</li>
-    </ul>
+        <ul>
+            <a class="aboutnav" href="https://jmk5420.github.io/igme230/projects/project2/about_me/about_me.html">
+                <li>About Me</li>
+            </a>
+            <a href="https://jmk5420.github.io/igme230/projects/project2/resume/resume.html">
+                <li>Resume</li>
+            </a>
+            <a href="https://www.instagram.com/the_keefer_designs/">
+                <li class="page">3D Blog</li>
+            </a>
 
+            <a href="https://jmk5420.github.io/igme230/projects/project2/contact/contact.html">
+                <li>Contact</li>
+            </a>
+            <a href="https://jmk5420.github.io/igme230/projects/project2/index.html">
+                <li>Portfolio</li>
+            </a>
+            <img class="name" id="logo" src="/projects/project2/images/logo.png" alt="images/jk.png">
+            <li class="name">John Keefe</li>
+
+        </ul>
+    </nav>
+    <main class="about">
+        <div class="personalpic">
+            <img src="/projects/project2/images/john.jpg">
+        </div>
+        <aside>
+            <h2>Hello</h2>
+            <p>My name is John Keefe and I am an aspiring UX/UI and motion designer in Rochester NY. I am currently in my 3rd year at the Rochester Institute of Technology in New Media Design.</p>
+            <p>I got my start with free design software when I was going to high school in New Hampshire. But I worked my way to paying for actually design equipment and now have a stronger focus on animation and UX/UI. I’m a big fan of older design trends such as vaporwave and the MTV era of design.</p>
+            <h2>Interests </h2>
+            <ul>
+                <li>Skiing</li>
+                <li>Hiking</li>
+                <li>Cooking</li>
+                <li>Science</li>
+                <li>Photography</li>
+                <li>Memes</li>
+            </ul>
+        </aside>
+    </main>
     <footer>
-        <p>© by John Keefe</p>
-        <p>3D Blog></p>
-        <img src="/images/logo.png">
+        <ul>
+            <li>
+                <a id="in" href="https://www.linkedin.com/in/john-keefe-iii/"><img class="footerlogo" src="/projects/project2/images/li_logo.png" alt="linkin.png"></a>
+            </li>
+            <li>
+                <a id="insta" href="https://www.instagram.com/the_keefer_designs/"><img class="footerlogo" src="/projects/project2/images/ig.png" alt="instagram.png"></a>
+            </li>
+            <li id="copyright">© by John Keefe</li>
+        </ul>
     </footer>
 </body>
 

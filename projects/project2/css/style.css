@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box
+}
+
 nav {
     list-style-type: none;
     margin: 20px 0 30px 0;
@@ -40,16 +44,30 @@ nav ul li:hover {
     text-decoration: none;
 }
 
-.about {
+.aboutnav {
     margin: 0 0 30px 0;
 }
 
-
-/*
-#logo {
-    padding: -70px;
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
-*/
+
+ul {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
 
 .active {
     background-color: #4CAF50;
@@ -66,6 +84,12 @@ iframe {
     display: grid;
     grid-template: 12fr;
     width: 100%;
+}
+
+#project {
+    text-align: center;
+    width: 100%;
+    margin: 50px;
 }
 
 .portblock {
@@ -85,20 +109,122 @@ iframe {
     opacity: 50%;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 2fr));
+    width: 100%;
+    max-width: 92vw;
 }
 
-h2 {
+.personalpic {
+    display: block;
+    width: 100%;
+}
+
+.aside {
+    display: block;
+    background: #e00a0a;
+    width: 100%;
+}
+
+.portblock {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 2fr));
+    max-width: 119vw;
+}
+
+.projectwrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 2fr));
+    max-width: 119vw;
+}
+
+.porthl {
+    text-align: center;
+    font-weight: 700;
+    margin: 60px 0 40px 0;
+}
+
+.portbod {
+    text-align: center;
+    margin: 0 150px
+}
+
+.boards img {
+    display: block;
+    width: 100%;
+}
+
+.left {}
+
+.right {}
+
+#chat {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
-#project {
+form div+div {
+    margin-top: 1em;
+}
+
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* To give the same size to all text fields */
+    width: 300px;
+    box-sizing: border-box;
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+    /* To give enough room to type some text */
+    height: 5em;
+}
+
+.button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px;
     text-align: center;
-    width: 100%;
-    margin: 50px;
+    color: #ff2727;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+    margin-left: .5em;
 }
 
 footer li {
