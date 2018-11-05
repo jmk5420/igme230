@@ -516,7 +516,6 @@
     .flex-object {
         flex: auto;
         display: block;
-        padding 16px;
         font-weight: 400;
         margin: 0 10px 0 10px;
     }
@@ -1013,7 +1012,6 @@
         .flex-object {
             flex: auto;
             display: block;
-            padding 16px;
             font-weight: 400;
             margin: 0 10px 0 10px;
         }
