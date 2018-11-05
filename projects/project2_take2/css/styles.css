@@ -56,7 +56,6 @@
         width: 100vw;
         grid-template-rows: auto;
         grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-        grid-template-areas: "video", "pLabel", "p1", "p2", "p3", "personalpic", "discription", "left", "right", "rit1", "rit12", "rit3", "rit4", "rit5", "rit6", "rit1", "rcomp1", "rcomp2", "rcomp3", "rcomp4", "rwf1", "rwf2", "rvid", "phnxhl", "nit1", "nit2", "nit3", "nit4", "nit5", "nit6", "nmdVid", "nmboard1", "nmboard2", "nms1", "nms2", "contact", "doc", "pit1", "pit2", "pit3", "pit4", "pit5", "ps1", "ps2", "pboard";
     }
     /*Moves the logo to be aligned with the nav text*/
 
@@ -515,9 +514,9 @@
     /*Add styling and helps with the aligning of the nav and footer elements*/
 
     .flex-object {
-        flex: flex-grow;
+        flex: auto;
         display: block;
-        padding 1em;
+        padding 16px;
         font-weight: 400;
         margin: 0 10px 0 10px;
     }
@@ -541,7 +540,6 @@
     .flex-foot {
         list-style: none;
         display: flex;
-        margin 0;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -616,7 +614,6 @@
             width: 100vw;
             grid-template-rows: auto;
             grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-            grid-template-areas: "video", "pLabel", "p1", "p2", "p3", "personalpic", "discription", "left", "right", "rit1", "rit12", "rit3", "rit4", "rit5", "rit6", "rit1", "rcomp1", "rcomp2", "rcomp3", "rcomp4", "rwf1", "rwf2", "rvid", "phnxhl", "nit1", "nit2", "nit3", "nit4", "nit5", "nit6", "nmdVid", "nmboard1", "nmboard2", "nms1", "nms2", "contact", "doc", "pit1", "pit2", "pit3", "pit4", "pit5", "ps1", "ps2", "pboard";
         }
         /*Moves the logo to be aligned with the nav text*/
         .logo {
@@ -1014,9 +1011,9 @@
         }
         /*Add styling and helps with the aligning of the nav and footer elements*/
         .flex-object {
-            flex: flex-grow;
+            flex: auto;
             display: block;
-            padding 1em;
+            padding 16px;
             font-weight: 400;
             margin: 0 10px 0 10px;
         }
@@ -1038,7 +1035,6 @@
         .flex-foot {
             list-style: none;
             display: flex;
-            margin 0;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
