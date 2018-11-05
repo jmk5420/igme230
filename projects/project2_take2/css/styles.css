@@ -561,7 +561,7 @@
     }
     /*Adds a mobile state to the site*/
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 600px) {
         * {
             box-sizing: border-box;
         }
