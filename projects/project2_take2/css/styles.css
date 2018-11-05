@@ -564,8 +564,6 @@
     @media screen and (max-width: 760px) {
         * {
             box-sizing: border-box;
-            border: 1px solid;
-            border-color: #ff0000
         }
         /*Makes mobile grid*/
         .container {
