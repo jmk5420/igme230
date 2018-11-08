@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Keefe Week 11</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #navpannel {
+            width: 200px;
+            height: 200px;
+            background-color: firebrick;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="show">Show</button><button id="hide">Hide</button>
+    <div id="navpannel">
+        <img src="1.jpg" alt="a">
+    </div>
+
+    <script>
+        $("#hide").click(function() {
+            $("#navpannel").hide("fast");
+        });
+        $("#show").click(function() {
+            $("#navpannel").show(5000);
+            //be patience
+        });
+    </script>
+</body>
+
+</html>
