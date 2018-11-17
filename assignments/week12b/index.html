@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Week 12b</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.slidereveal.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        #bg {
+            height: 1080px;
+            width: 100%;
+            z-index: 1;
+            background: url(./images/back.jpg) no-repeat center center fixed;
+            background-size: cover;
+            -webkit-background-size: cover -moz-background-size: cover;
+            -o-background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            /* main axis vertical; places menu below togglebar */
+            align-items: flex-end;
+            /* moves contents to end of cross-axis (horizontal) */
+        }
+
+        #togglebar {
+            height: 25px;
+            width: 145px;
+            border: 1px solid;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            background-color: darkred;
+            z-index: 3;
+        }
+
+        #menu {
+            height: 200px;
+            width: 545px;
+            position: absolute;
+            top: 25px;
+            background-color: blueviolet;
+            border: 1px solid black;
+            border-top: none;
+            border-radius: 10px;
+            z-index: 2;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .happy {
+            padding-top: 50px;
+        }
+
+        #navpanel {
+            display: grid;
+            grid-template-columns: 100px 1.5rem;
+            width: 620px;
+            min-height: 200px;
+            max-height: 90vh;
+            overflow: scroll;
+            border: 1px solid black;
+            margin-bottom: 2em;
+            background-color: red;
+            position: fixed;
+            left: -570px;
+            z-index: 2;
+        }
+
+        #navtoggle {
+            grid-column-start: 12;
+            font-size: 3em;
+            font-weight: bold;
+            padding-left: 340px;
+        }
+
+        #navmenu {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            align-items: top;
+        }
+
+        #close {
+            display: none;
+            float: right;
+        }
+
+        #open {
+            font-size: 2.5rem;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        #content {
+            padding: 0 .5em 0 2em;
+        }
+    </style>
+</head>
+
+<body id="bg">
+    <nav>
+        <div id="togglebar">Teh Secret of Life</div>
+        <div id="menu">
+            <ul>
+                <li class="happy"><img src="images/tongue.png"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="navpanel">
+        <div id="navtoggle"><span id="close">+</span><span id="open">-</span></div>
+        <div id="navmenu">
+            <p>Nav Menu</p>
+            <ul>
+                <li><span class="submenu">Example Links</span>
+                    <ul class="submenu-panel">
+                        <li><img src="./images/pizza.gif" alt="Flowers in Chania"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    $("#togglebar").click(function() {
+        $("#menu").slideToggle(5000);
+    });
+
+    $("#close").click(function() {
+        $("#navpanel").animate({
+            left: '-570'
+        }, "fast");
+        $("#open").toggle();
+        $("#close").toggle();
+    });
+
+    $("#open").click(function() {
+        $("#navpanel").animate({
+            left: '450px'
+        }, "fast");
+        $("#close").toggle();
+        $("#open").toggle();
+    });
+
+    $(".submenu").click(function() {
+        $(this).next(".submenu-panel").toggle();
+    });
+</script>
+</html>
