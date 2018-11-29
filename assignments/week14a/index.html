@@ -107,17 +107,18 @@
         /*Second Round*/
         let poem = "newpoem.txt";
 
-        let verse = ("newpoem.txt") // sets default verse element
-        $("#verse-choose").val(verse); // changes menu option to default
-        $("#selectedverse").load(verse); // retrieves only default element
-
+        let verse = ("verse1") // sets default verse element
         let verseString = (poem + " #" + verse);
         // or use ES6 templating:
         // let verseString = `${poem} #${verse}`;
+        $("#verse-choose").val(verse); // changes menu option to default
+        $("#selectedverse").load(verseString); // retrieves only default element
 
-        $("#verse-choose").change(function(verseString) {
-            verse = $(this).val();
-            $("#selectedverse").load(verseString)
+        $("#verse-choose").change(function() {
+            verse = $(this).val(); // refers back up to the html to set to selct verse
+            verseString = (poem + " #" + verse); //changes the verse
+            $("#selectedverse").load(verseString) // retrieves selected element
+
         });
     </script>
 </body>
