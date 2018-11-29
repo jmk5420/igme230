@@ -1,0 +1,20 @@
+<p id="verse1">How happy is the bright efflorescence!
+Are you upset by how blinding it is?</p>
+
+<p id="verse2">Does it tear you apart to see the efflorescence so beaming?</p>
+
+<p id="verse3">Blossoms, however hard they try,
+Will always be lilac.
+Do blossoms make you shiver?
+do they?</p>
+
+<p id="verse4">Pay attention to the bloom,
+the bloom is the most yellow time of life of all.</p>
+
+<p id="verse5">Down, down, down into the darkness of the bloom,
+Gently it goes - the unhealthy, the white-livered, the yellowish.
+</p>
+
+<p id="verse6">How happy is the wooly heyday!
+Are you upset by how muzzy it is?
+Does it tear you apart to see the heyday so confused?</p> 
