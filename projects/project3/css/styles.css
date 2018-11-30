@@ -1,0 +1,1051 @@
+    /*Used for testing the website*/
+
+    * {
+        box-sizing: border-box;
+    }
+    /*Styles all of the p tags to have the font that I want */
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    /*Styles all of the h1 tags to have the font that I want */
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    /*Styles all of the h2 tags to have the font that I want */
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+    /*Styles all of the h3 tags to have the font that I want */
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    /*Styles all of the ul tags to have the font that I want and to get rid of the bullets */
+
+    ul {
+        list-style-type: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        padding-left: 0;
+    }
+    /*Gets rid of blue color on links*/
+
+    a {
+        color: black;
+        padding-bottom: 10px;
+        text-decoration: none;
+    }
+    /*Establishes visually feed back when hovering*/
+
+    a:hover {
+        color: #E95353;
+        border-bottom: 2px solid #E95353;
+        font-weight: 700;
+    }
+    /*Astablishs a grid that holds all of the content on the page and all the elements affected by the grid */
+
+    .container {
+        display: grid;
+        width: 100vw;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    }
+    /*Moves the logo to be aligned with the nav text*/
+
+    .logo {
+        align-self: baseline;
+        margin: auto;
+        max-width: 15vh;
+    }
+    /*Proporly sizes videos to page*/
+
+    iframe {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    /*Landing page*/
+    /*Animates portfolio blocks*/
+
+    .ol:hover {
+        border: none;
+        transition: all 0.1s ease-in-out;
+        transform: scale(0.9);
+    }
+    /*Aligns the b roll class with the grid and pushes the video down*/
+
+    .video {
+        grid-area: video;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: auto;
+        padding-top: 50px;
+    }
+    /*Aligns the label class with the grid*/
+
+    .pLabel {
+        grid-area: pLabel;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: auto;
+        text-align: center;
+    }
+    /*Aligns the portfolio blocks with the grid*/
+
+    .portfolio {
+        grid-area: portfolio;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        height: auto;
+    }
+    /*Aligns the 1st portfolio block with the grid*/
+
+    .p1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*Aligns the 2nd portfolio block with the grid*/
+
+    .p2 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*Aligns the 3rd portfolio block with the grid*/
+
+    .p3 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*Makes portfolio image resize to the size of the page*/
+    /*Makes portfolio image resize to the size of the page*/
+
+    .portimg {
+        width: 100%;
+    }
+    /*About me page*/
+    /*Aligns the personal picture with the grid and pushes down*/
+
+    .personalpic {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding-top: 50px;
+    }
+    /*Aligns the discription with the grid and pushes down*/
+
+    .discription {
+        margin-top: -25px;
+        line-height: 24px;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding-top: 50px;
+        padding-left: 25px;
+    }
+    /*Resume page*/
+    /*Aligns the left half of my resume with the grid*/
+
+    .left {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 50px 0 0 70px;
+    }
+    /*Aligns the right half of my resume with the grid*/
+
+    .right {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 50px 0 0 60px
+    }
+    /*Contact page*/
+    /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+    .contact {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        line-height: 34px;
+        padding-top: 115px;
+        padding-bottom: 135px;
+    }
+    /*Documenrtation page*/
+    /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+    .doc {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        line-height: 34px;
+        padding-top: 135px;
+        padding-bottom: 155px;
+    }
+    /*Portfolio pages*/
+    /*Centers text*/
+
+    .porthl {
+        text-align: center;
+    }
+    /*Centers text*/
+
+    .porthdmain {
+        text-align: center;
+    }
+    /*Centers text*/
+
+    .phlb {
+        text-align: center;
+    }
+    /*Centers text*/
+
+    .phl {
+        text-align: center;
+    }
+    /*Adds line height*/
+
+    .portbod {
+        line-height: 24px;
+    }
+    /*Genral Project Tags*/
+    /*Aligns the text with the grid and moves content down*/
+
+    .prhl {
+        padding-top: 40px;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    /*Aligns the vido with the grid*/
+
+    .prvid {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    /*Reporter tags*/
+    /*Aligns the text with the grid*/
+
+    .rit1 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*Aligns the text with the grid*/
+
+    .rit2 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*Aligns the text with the grid*/
+
+    .rit3 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    /*Aligns wireframes with the grid and add padding*/
+
+    .rwf1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        padding-right: 10px;
+    }
+    /*Aligns wireframes with the grid and add padding*/
+
+    .rwf2 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        padding-left: 10px;
+    }
+    /*Aligns the text with the grid*/
+
+    .rit4 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    /*Aligns comps with the grid and add padding*/
+
+    .rcomp1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 9;
+        padding-right: 10px;
+    }
+    /*Aligns comps with the grid and add padding*/
+
+    .rcomp2 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 8;
+        grid-row-end: 9;
+        padding-left: 10px;
+    }
+    /*Aligns the text with the grid*/
+
+    .rit5 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+    /*Aligns comps with the grid and add padding*/
+
+    .rcomp3 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 10;
+        grid-row-end: 11;
+        padding-right: 10px;
+    }
+    /*Aligns comps with the grid and add padding*/
+
+    .rcomp4 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 10;
+        grid-row-end: 11;
+        padding-left: 10px;
+    }
+    /*PHNX tags*/
+    /*Aligns the text with the grid*/
+
+    .pit1 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*Aligns the text with the grid*/
+
+    .pit2 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*Aligns the text with the grid*/
+
+    .pit3 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    /*Aligns the text with the grid*/
+
+    .pit4 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    /*Aligns style frames with the grid and adds padding*/
+
+    .ps1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        padding-right: 10px;
+    }
+    /*Aligns style frames with the grid and adds padding*/
+
+    .ps2 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        padding-left: 10px;
+    }
+    /*Aligns the text with the grid*/
+
+    .pit5 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+    /*Aligns mood board with the grid*/
+
+    .pboard {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+    /*New Media Bumper tags*/
+    /*Aligns the text with the grid*/
+
+    .nit1 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*Aligns the text with the grid*/
+
+    .nit2 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*Aligns the text with the grid*/
+
+    .nit3 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    /*Aligns the text with the grid*/
+
+    .nit4 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    /*Aligns the text with the grid*/
+
+    .nit5 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    /*Aligns mood board with the grid and adds padding*/
+
+    .nmboard1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 9;
+        padding-right: 10px;
+    }
+    /*Aligns mood board with the grid and adds padding*/
+
+    .nmboard2 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 8;
+        grid-row-end: 9;
+        padding-left: 10px;
+    }
+    /*Aligns the text with the grid*/
+
+    .nit6 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+    /*Aligns sketches with the grid and adds padding*/
+
+    .nms1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 10;
+        grid-row-end: 11;
+        padding-right: 10px;
+    }
+    /*Aligns sketches with the grid and adds padding*/
+
+    .nms2 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 10;
+        grid-row-end: 11;
+        padding-left: 10px;
+    }
+    /*Aligns nav with the grid and makes it shrink with the window aswell as add some stlying*/
+
+    .flex-nav {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    /*Add styling and helps with the aligning of the nav and footer elements*/
+
+    .flex-object {
+        flex: auto;
+        display: block;
+        font-weight: 400;
+        margin: 0 10px 0 10px;
+    }
+    /*Moves certain elements in the nav and footer to the right*/
+
+    .flex-right {
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+    }
+    /*Moves certain elements in the nav and footer to the left*/
+
+    .flex-left {
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        padding-left: 120px
+    }
+    /*Aligns footer with the grid and makes it shrink with the window aswell as add some stlying*/
+
+    .flex-foot {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    /*Stlyes my name and pushes it right from my logo*/
+
+    .name {
+        margin-right: 10px;
+        font-weight: 700;
+    }
+    /*moves the top right nav to the left away from the edge of the screen*/
+
+    .last {
+        margin-right: 120px;
+    }
+    /*Adds a mobile state to the site*/
+
+    @media screen and (max-width: 1200px) {
+        /*Makes mobile grid*/
+        .container {
+            width: 100vw;
+            grid-template-columns: 1fr 5fr 5fr 1fr;
+        }
+        /*Used for testing the website*/
+        * {
+            box-sizing: border-box;
+        }
+        /*Styles all of the p tags to have the font that I want */
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        /*Styles all of the h1 tags to have the font that I want */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        /*Styles all of the h2 tags to have the font that I want */
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        /*Styles all of the h3 tags to have the font that I want */
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        /*Styles all of the ul tags to have the font that I want and to get rid of the bullets */
+        ul {
+            list-style-type: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            padding-left: 0;
+        }
+        /*Gets rid of blue color on links*/
+        a {
+            color: black;
+            padding-bottom: 10px;
+            text-decoration: none;
+        }
+        /*Establishes visually feed back when hovering*/
+        a:hover {
+            color: #E95353;
+            border-bottom: 2px solid #E95353;
+            font-weight: 700;
+        }
+        /*Astablishs a grid that holds all of the content on the page and all the elements affected by the grid */
+        .container {
+            display: grid;
+            width: 100vw;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+        }
+        /*Moves the logo to be aligned with the nav text*/
+        .logo {
+            align-self: baseline;
+            margin: auto;
+            max-width: 15vh;
+        }
+        /*Proporly sizes videos to page*/
+        iframe {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        /*Landing page*/
+        /*Animates portfolio blocks*/
+        .ol:hover {
+            border: none;
+            transition: all 0.1s ease-in-out;
+            transform: scale(0.9);
+        }
+        /*Aligns the b roll class with the grid and pushes the video down*/
+        .video {
+            grid-area: video;
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            height: auto;
+            padding-top: 50px;
+        }
+        /*Aligns the label class with the grid*/
+        .pLabel {
+            grid-area: pLabel;
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            height: auto;
+            text-align: center;
+        }
+        /*Aligns the portfolio blocks with the grid*/
+        .portfolio {
+            grid-area: portfolio;
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            height: auto;
+        }
+        /*Aligns the 1st portfolio block with the grid*/
+        .p1 {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        /*Aligns the 2nd portfolio block with the grid*/
+        .p2 {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        /*Aligns the 3rd portfolio block with the grid*/
+        .p3 {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        /*Makes portfolio image resize to the size of the page*/
+        .portimg {
+            width: 100%;
+        }
+        /*About me page*/
+        /*Aligns the personal picture with the grid and pushes down*/
+        .personalpic {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding-top: 50px;
+        }
+        /*Aligns the discription with the grid and pushes down*/
+        .discription {
+            margin-top: -25px;
+            line-height: 24px;
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            padding-top: 50px;
+            padding-left: 25px;
+        }
+        /*Resume page*/
+        /*Aligns the left half of my resume with the grid*/
+        .left {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding: 50px 0 0 0;
+        }
+        /*Aligns the right half of my resume with the grid*/
+        .right {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            padding: 0 0 0 0;
+        }
+        /*Contact page*/
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+        .contact {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            line-height: 34px;
+            padding-top: 115px;
+            padding-bottom: 135px;
+        }
+        /*Documenrtation page*/
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+        .doc {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            line-height: 34px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        /*Portfolio pages*/
+        /*Adds line height*/
+        .portbod {
+            line-height: 24px;
+        }
+        /*Genral Project Tags*/
+        /*Aligns the text with the grid and moves content down*/
+        .prhl {
+            padding-top: 40px;
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        /*Aligns the vido with the grid*/
+        .prvid {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            margin: -150px 0 -150px 0;
+        }
+        /*Reporter tags*/
+        /*Aligns the text with the grid*/
+        .rit1 {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        /*Aligns the text with the grid*/
+        .rit2 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        /*Aligns the text with the grid*/
+        .rit3 {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        /*Aligns wireframes with the grid and add padding*/
+        .rwf1 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 6;
+            grid-row-end: 7;
+            padding-right: 10px;
+        }
+        /*Aligns wireframes with the grid and add padding*/
+        .rwf2 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 7;
+            grid-row-end: 8;
+            padding-left: 10px;
+        }
+        /*Aligns the text with the grid*/
+        .rit4 {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 8;
+            grid-row-end: 9;
+        }
+        /*Aligns comps with the grid and adds margins*/
+        .rcomp1 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 9;
+            grid-row-end: 10;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        /*Aligns comps with the grid and adds margins*/
+        .rcomp2 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 10;
+            grid-row-end: 11;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        /*Aligns the text with the grid*/
+        .rit5 {
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 11;
+            grid-row-end: 12;
+        }
+        /*Aligns comps with the grid and adds margins*/
+        .rcomp3 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 12;
+            grid-row-end: 13;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        /*Aligns comps with the grid and adds margins*/
+        .rcomp4 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 13;
+            grid-row-end: 14;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        /*PHNX tags*/
+        /*Aligns the text with the grid*/
+        .pit1 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        /*Aligns the text with the grid*/
+        .pit2 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        /*Aligns the text with the grid*/
+        .pit3 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        /*Aligns the text with the grid*/
+        .pit4 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        /*Aligns style frames with the grid and adds margins*/
+        .ps1 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 7;
+            grid-row-end: 8;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+        /*Aligns style frames with the grid*/
+        .ps2 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 8;
+            grid-row-end: 9;
+            padding: 0;
+        }
+        /*Aligns the text with the grid*/
+        .pit5 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 9;
+            grid-row-end: 10;
+        }
+        /*Aligns mood board with the grid*/
+        .pboard {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 10;
+            grid-row-end: 11;
+        }
+        /*New Media Bumper tags*/
+        /*Aligns the text with the grid*/
+        .nit1 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        /*Aligns the text with the grid*/
+        .nit2 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        /*Aligns the text with the grid*/
+        .nit3 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        /*Aligns the text with the grid*/
+        .nit4 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        /*Aligns the text with the grid*/
+        .nit5 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 7;
+            grid-row-end: 8;
+        }
+        /*Aligns mood board with the grid and adds margins and padding*/
+        .nmboard1 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 8;
+            grid-row-end: 9;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        /*Aligns mood board with the grid and adds margins and padding */
+        .nmboard2 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 9;
+            grid-row-end: 10;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        /*Aligns the text with the grid*/
+        .nit6 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 10;
+            grid-row-end: 11;
+        }
+        /*Aligns sketches with the grid and adds margins and padding*/
+        .nms1 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 11;
+            grid-row-end: 12;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        /*Aligns sketches with the grid and margins and adds padding*/
+        .nms2 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 12;
+            grid-row-end: 13;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        /*Aligns nav with the grid and makes it shrink with the window aswell as add some stlying*/
+        .flex-nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            padding-top: 20px;
+        }
+        /*Add styling and helps with the aligning of the nav and footer elements*/
+        .flex-object {
+            flex: auto;
+            display: block;
+            font-weight: 400;
+            margin: 0 10px 0 10px;
+        }
+        /*Moves certain elements in the nav and footer to the right*/
+        .flex-right {
+            flex-direction: row;
+            align-items: center;
+            display: flex;
+            padding-right: 50px
+        }
+        /*Moves certain elements in the nav and footer to the left*/
+        .flex-left {
+            flex-direction: row;
+            align-items: center;
+            display: flex;
+            padding-left: 50px
+        }
+        /*Aligns footer with the grid and makes it shrink with the window aswell as add some stlying*/
+        .flex-foot {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        /*Stlyes my name and pushes it right from my logo*/
+        .name {
+            margin-right: 10px;
+            font-weight: 700;
+        }
+        /*moves the top right nav to the left away from the edge of the screen*/
+        .last {
+            margin-right: 50px;
+        }
+    }
