@@ -587,7 +587,7 @@
     }
     /*Adds a mobile state to the site*/
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 800px) {
         /*Makes mobile grid*/
         .container {
             width: 100vw;
