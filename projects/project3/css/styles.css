@@ -56,6 +56,7 @@
         width: 100vw;
         grid-template-rows: auto;
         grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+        z-index: 2;
     }
     /*Moves the logo to be aligned with the nav text*/
 
@@ -82,60 +83,44 @@
     /*Aligns the b roll class with the grid and pushes the video down*/
 
     .video {
-        grid-area: video;
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-column: 1/7;
+        grid-row: 1/2;
         height: auto;
         padding-top: 50px;
     }
     /*Aligns the label class with the grid*/
 
     .pLabel {
-        grid-area: pLabel;
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-column: 2/6;
+        grid-row: 2/3;
         height: auto;
         text-align: center;
     }
     /*Aligns the portfolio blocks with the grid*/
 
     .portfolio {
-        grid-area: portfolio;
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-column: 2/6;
+        grid-row 5/6;
         height: auto;
     }
     /*Aligns the 1st portfolio block with the grid*/
 
     .p1 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-column: 2/4;
+        grid-row: 3/4;
     }
     /*Aligns the 2nd portfolio block with the grid*/
 
     .p2 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-column: 4/6;
+        grid-row: 3/4;
     }
     /*Aligns the 3rd portfolio block with the grid*/
 
     .p3 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-column: 2/4;
+        grid-row: 4/5;
     }
-    /*Makes portfolio image resize to the size of the page*/
     /*Makes portfolio image resize to the size of the page*/
 
     .portimg {
@@ -145,10 +130,8 @@
     /*Aligns the personal picture with the grid and pushes down*/
 
     .personalpic {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
+        grid-column: 1/4;
+        grid-row: 1/1;
         padding-top: 50px;
     }
     /*Aligns the discription with the grid and pushes down*/
@@ -156,10 +139,8 @@
     .discription {
         margin-top: -25px;
         line-height: 24px;
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 1;
+        grid-column: 4/6;
+        grid-row: 1/1;
         padding-top: 50px;
         padding-left: 25px;
     }
@@ -167,19 +148,15 @@
     /*Aligns the left half of my resume with the grid*/
 
     .left {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
+        grid-column: 1/4;
+        grid-row: 1/1;
         padding: 50px 0 0 70px;
     }
     /*Aligns the right half of my resume with the grid*/
 
     .right {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 1;
+        grid-column: 4/6;
+        grid-row: 1/1;
         padding: 50px 0 0 60px
     }
     /*Contact page*/
@@ -187,10 +164,8 @@
 
     .contact {
         text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 1;
+        grid-column: 1/7;
+        grid-row: 1/1;
         line-height: 34px;
         padding-top: 115px;
         padding-bottom: 135px;
@@ -199,10 +174,8 @@
     /*Aligns content with the grid a well as uses padding to move the content to the center*/
 
     .doc {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 1;
+        grid-column: 2/6;
+        grid-row: 1/1;
         line-height: 34px;
         padding-top: 135px;
         padding-bottom: 155px;
@@ -238,27 +211,21 @@
 
     .prhl {
         padding-top: 40px;
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-column: 1/7;
+        grid-row: 1/2;
     }
     /*Aligns the vido with the grid*/
 
     .prvid {
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-column: 1/7;
+        grid-row: 2/3;
     }
     /*Reporter tags*/
     /*Aligns the text with the grid*/
 
     .rit1 {
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-column: 1/7;
+        grid-row: 3/4;
     }
     /*Aligns the text with the grid*/
 
@@ -501,17 +468,29 @@
     /*Aligns nav with the grid and makes it shrink with the window aswell as add some stlying*/
 
     .flex-nav {
-        list-style: none;
         display: flex;
         margin: 0;
-        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         padding-top: 20px;
     }
     /*Add styling and helps with the aligning of the nav and footer elements*/
+
+    .flex-left {
+        display: inline-flex;
+        padding-left: 100px;
+    }
+
+    .flex-right {
+        display: inline-flex;
+        align-content: center;
+        padding: 12px 50px 0 0;
+    }
+
+    .menu {
+        display: none;
+    }
 
     .flex-object {
         flex: auto;
@@ -520,32 +499,23 @@
         margin: 0 10px 0 10px;
     }
     /*Moves certain elements in the nav and footer to the right*/
-
-    .flex-right {
-        flex-direction: row;
-        align-items: center;
-        display: flex;
-    }
-    /*Moves certain elements in the nav and footer to the left*/
-
-    .flex-left {
-        flex-direction: row;
-        align-items: center;
-        display: flex;
-        padding-left: 120px
-    }
     /*Aligns footer with the grid and makes it shrink with the window aswell as add some stlying*/
 
-    .flex-foot {
-        list-style: none;
+    #footer-flex {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
+        align-content: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 100px;
     }
-    /*Stlyes my name and pushes it right from my logo*/
+    /*moves items to the left */
+
+    #footer-icon {
+        display: inline-flex;
+        padding-right: 50px;
+    }
+    /*Gives stlying and margins to name */
 
     .name {
         margin-right: 10px;
@@ -563,6 +533,23 @@
         .container {
             width: 100vw;
             grid-template-columns: 1fr 5fr 5fr 1fr;
+        }
+        .flex-right {
+            display: none;
+            align-content: center;
+            padding: 12px 50px 0 0;
+        }
+        .menu {
+            display: inline;
+            padding-right: 100px;
+        }
+        .menutog {
+            padding-top: 15px;
+        }
+        .menuitem {
+            background-color: #e0e0e0;
+            padding: 5px;
+            z-index: 2;
         }
         /*Used for testing the website*/
         * {
@@ -613,6 +600,7 @@
             width: 100vw;
             grid-template-rows: auto;
             grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+            z-index: 1;
         }
         /*Moves the logo to be aligned with the nav text*/
         .logo {
@@ -1014,20 +1002,6 @@
             display: block;
             font-weight: 400;
             margin: 0 10px 0 10px;
-        }
-        /*Moves certain elements in the nav and footer to the right*/
-        .flex-right {
-            flex-direction: row;
-            align-items: center;
-            display: flex;
-            padding-right: 50px
-        }
-        /*Moves certain elements in the nav and footer to the left*/
-        .flex-left {
-            flex-direction: row;
-            align-items: center;
-            display: flex;
-            padding-left: 50px
         }
         /*Aligns footer with the grid and makes it shrink with the window aswell as add some stlying*/
         .flex-foot {
