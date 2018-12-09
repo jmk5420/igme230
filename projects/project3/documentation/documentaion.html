@@ -7,42 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <title>Keefe Project 3</title>
 
 </head>
 
 <body>
     <nav>
-        <ul class="flex-nav">
+        <div class="flex-nav">
             <div class="flex-left">
-                <li><img class="flex-object logo" src="../images/logo.png" alt="images/jk.png"></li>
-                <li>
-                    <div class="navtext">
-                        <p class="name">John Keefe</p>
-                    </div>
-                </li>
+                <img class="flex-object logo" src="../images/logo.png" alt="images/jk.png">
+
+                <div class="navtext">
+                    <p class="name">John Keefe</p>
+                </div>
             </div>
             <div class="flex-right">
-                <li><a class="flex-object" href="../index.html">
+                <a class="flex-object" href="../index.html">
                 Portfolio
-                </a></li>
-                <li><a class="flex-object" href="../contact/contact.html">
+                </a>
+                <a class="flex-object" href="../contact/contact.html">
+                    Contact
+                </a>
+                <a class="flex-object" href="https://www.instagram.com/the_keefer_designs/">
+                    3D Blog
+                </a>
+                <a class="flex-object" href="../resume/resume.html">
+                    Resume
+                </a>
+                <a class="flex-object" href="../about_me/about_me.html">
+                    About Me
+                </a>
+                <a class="flex-object" href="../documentation/documentaion.html">
+                    Documentation
+           </a>
+            </div>
+            <div class="menu">
+                <img class="menutog" src="../images/menu-01.png" alt="images/menu-01.png">
+                <ul>
+                    <li><a class="flex-object menuitem" href="../index.html">
+                Portfolio
+                   </a></li>
+                    <li> <a class="flex-object menuitem" href="../contact/contact.html">
                     Contact
                 </a></li>
-                <li> <a class="flex-object" href="https://www.instagram.com/the_keefer_designs/">
+                    <li><a class="flex-object menuitem" href="https://www.instagram.com/the_keefer_designs/">
                     3D Blog
                 </a></li>
-                <li> <a class="flex-object" href="../resume/resume.html">
+                    <li><a class="flex-object menuitem" href="../resume/resume.html">
                     Resume
                 </a></li>
-                <li> <a class="flex-object" href="../about_me/about_me.html">
+                    <li> <a class="flex-object menuitem" href="../about_me/about_me.html">
                     About Me
                 </a></li>
-                <li> <a class="flex-object last" href="../documentation/documentaion.html">
+                    <li><a class="flex-object menuitem" href="../documentation/documentaion.html">
                     Documentation
            </a></li>
+                </ul>
             </div>
-        </ul>
+        </div>
     </nav>
     <div class="container">
         <div class="doc">
@@ -50,22 +74,15 @@
         </div>
     </div>
     <footer>
-        <ul class="flex-foot">
-            <div class="flex-left">
-                <li class="flex-object">© by John Keefe</li>
+        <div id="footer-flex">
+            <p>© by John Keefe</p>
+            <div id="footer-icon">
+                <a id="insta" href="https://www.instagram.com/the_keefer_designs/"><img class="flex-object" src="../images/ig.png" alt="instagram.png"></a>
+                <a class="flex-object" href="https://www.linkedin.com/in/john-keefe-iii/"><img class="footerlogo" src="../images/li_logo.png" alt="linkin.png"></a>
             </div>
-            <div class="flex-right">
-                <li>
-                    <a id="insta" href="https://www.instagram.com/the_keefer_designs/"><img class="flex-object" src="../images/ig.png" alt="instagram.png"></a>
-                </li>
-                <li>
-                    <div class="last">
-                        <a class="flex-object" href="https://www.linkedin.com/in/john-keefe-iii/"><img class="footerlogo" src="../images/li_logo.png" alt="linkin.png"></a>
-                    </div>
-                </li>
-            </div>
-        </ul>
+        </div>
     </footer>
+    <script src="../js/int.js"></script>
 </body>
 
 </html>

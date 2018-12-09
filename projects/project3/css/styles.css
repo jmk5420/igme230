@@ -121,6 +121,12 @@
         grid-column: 2/4;
         grid-row: 4/5;
     }
+    /*Aligns the 4th portfolio block with the grid*/
+
+    .p4 {
+        grid-column: 4/6;
+        grid-row: 4/5;
+    }
     /*Makes portfolio image resize to the size of the page*/
 
     .portimg {
@@ -224,245 +230,212 @@
     /*Aligns the text with the grid*/
 
     .rit1 {
+        padding-top: 70px;
         grid-column: 1/7;
         grid-row: 3/4;
     }
     /*Aligns the text with the grid*/
 
     .rit2 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-column: 2/6;
+        grid-row: 4/5;
     }
     /*Aligns the text with the grid*/
 
     .rit3 {
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        padding-top: 70px;
+        grid-column: 1/7;
+        grid-row: 5/6;
     }
     /*Aligns wireframes with the grid and add padding*/
 
     .rwf1 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 7;
+        grid-column: 2/4;
+        grid-row: 6/7;
         padding-right: 10px;
     }
     /*Aligns wireframes with the grid and add padding*/
 
     .rwf2 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 6;
-        grid-row-end: 7;
+        grid-column: 4/6;
+        grid-row: 6/7;
         padding-left: 10px;
     }
     /*Aligns the text with the grid*/
 
     .rit4 {
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 7;
-        grid-row-end: 8;
+        padding-top: 70px;
+        grid-column: 1/7;
+        grid-row: 7/8;
     }
     /*Aligns comps with the grid and add padding*/
 
     .rcomp1 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 8;
-        grid-row-end: 9;
+        grid-column: 2/4;
+        grid-row: 8/9;
         padding-right: 10px;
     }
     /*Aligns comps with the grid and add padding*/
 
     .rcomp2 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 8;
-        grid-row-end: 9;
+        grid-column: 4/6;
+        grid-row: 8/9;
         padding-left: 10px;
     }
     /*Aligns the text with the grid*/
 
     .rit5 {
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 9;
-        grid-row-end: 10;
+        padding-top: 70px;
+        grid-column: 1/7;
+        grid-row: 9/10;
     }
     /*Aligns comps with the grid and add padding*/
 
     .rcomp3 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 10;
-        grid-row-end: 11;
+        grid-column: 2/4;
+        grid-row: 10/11;
         padding-right: 10px;
     }
     /*Aligns comps with the grid and add padding*/
 
     .rcomp4 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 10;
-        grid-row-end: 11;
+        grid-column: 4/6;
+        grid-row: 10/11;
         padding-left: 10px;
     }
     /*PHNX tags*/
     /*Aligns the text with the grid*/
 
     .pit1 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-column: 2/4;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /*Aligns the text with the grid*/
 
     .pit2 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-column: 4/6;
+        grid-row: 3/4;
+        padding: 70px;
     }
     /*Aligns the text with the grid*/
 
     .pit3 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-column: 4/6;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /*Aligns the text with the grid*/
 
     .pit4 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 6;
-        grid-row-end: 7;
+        grid-column: 4/6;
+        grid-row: 5/6;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /*Aligns style frames with the grid and adds padding*/
 
     .ps1 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 7;
-        grid-row-end: 8;
-        padding-right: 10px;
+        grid-column: 2/4;
+        grid-row: 4/5;
     }
     /*Aligns style frames with the grid and adds padding*/
 
     .ps2 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 7;
-        grid-row-end: 8;
-        padding-left: 10px;
+        grid-column: 2/4;
+        grid-row: 5/6;
     }
     /*Aligns the text with the grid*/
 
     .pit5 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 9;
-        grid-row-end: 10;
+        grid-column: 2/4;
+        grid-row: 6/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /*Aligns mood board with the grid*/
 
     .pboard {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 10;
-        grid-row-end: 11;
+        padding-top: 70px;
+        grid-column: 4/6;
+        grid-row: 6/7;
     }
     /*New Media Bumper tags*/
     /*Aligns the text with the grid*/
 
     .nit1 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        padding-top: 70px;
+        grid-column: 2/4;
+        grid-row: 3/4;
     }
     /*Aligns the text with the grid*/
 
     .nit2 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-column: 2/4;
+        grid-row: 4/5;
+        padding-right: 10px;
     }
     /*Aligns the text with the grid*/
 
     .nit3 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        padding-top: 70px;
+        grid-column: 4/6;
+        grid-row: 3/4;
     }
     /*Aligns the text with the grid*/
 
     .nit4 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 6;
-        grid-row-end: 7;
+        grid-column: 4/6;
+        grid-row: 4/5;
+        padding-left: 10px;
     }
     /*Aligns the text with the grid*/
 
     .nit5 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 7;
-        grid-row-end: 8;
+        padding-top: 70px;
+        grid-column: 2/6;
+        grid-row: 7/8;
     }
     /*Aligns mood board with the grid and adds padding*/
 
     .nmboard1 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 8;
-        grid-row-end: 9;
+        grid-column: 2/4;
+        grid-row: 8/9;
         padding-right: 10px;
     }
     /*Aligns mood board with the grid and adds padding*/
 
     .nmboard2 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 8;
-        grid-row-end: 9;
+        grid-column: 4/6;
+        grid-row: 8/9;
         padding-left: 10px;
     }
     /*Aligns the text with the grid*/
 
     .nit6 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 9;
-        grid-row-end: 10;
+        padding-top: 70px;
+        grid-column: 2/6;
+        grid-row: 9/10;
     }
     /*Aligns sketches with the grid and adds padding*/
 
     .nms1 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 10;
-        grid-row-end: 11;
+        grid-column: 2/4;
+        grid-row: 10/11;
         padding-right: 10px;
     }
     /*Aligns sketches with the grid and adds padding*/
 
     .nms2 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 10;
-        grid-row-end: 11;
+        grid-column: 4/6;
+        grid-row: 10/11;
         padding-left: 10px;
     }
     /*Aligns nav with the grid and makes it shrink with the window aswell as add some stlying*/
