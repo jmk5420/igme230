@@ -639,6 +639,7 @@
                 width: 100vw;
                 grid-template-rows: auto;
                 grid-template-columns: 1fr;
+                margin: 10px;
             }
             .flex-left {
                 display: inline-flex;
@@ -725,8 +726,8 @@
             /*Aligns the label class with the grid*/
             .pLabel {
                 grid-area: pLabel;
-                grid-column-start: 2;
-                grid-column-end: 6;
+                grid-column-start: 1;
+                grid-column-end: 7;
                 grid-row-start: 2;
                 grid-row-end: 3;
                 height: auto;
@@ -735,8 +736,8 @@
             /*Aligns the portfolio blocks with the grid*/
             .portfolio {
                 grid-area: portfolio;
-                grid-column-start: 2;
-                grid-column-end: 6;
+                grid-column-start: 1;
+                grid-column-end: 7;
                 grid-row-start: 5;
                 grid-row-end: 6;
                 height: auto;
