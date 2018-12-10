@@ -639,7 +639,7 @@
                 width: 100vw;
                 grid-template-rows: auto;
                 grid-template-columns: 1fr;
-                margin: 10px;
+                padding: 0 5px 0 5px;
             }
             .flex-left {
                 display: inline-flex;
@@ -779,7 +779,7 @@
                 grid-column-end: 7;
                 grid-row-start: 1;
                 grid-row-end: 2;
-                padding-top: 50px;
+                padding-top: 30px;
             }
             /*Aligns the discription with the grid and pushes down*/
             .discription {
@@ -1084,7 +1084,7 @@
             /*Be Playstation*/
             /*Aligns the text with the grid*/
             .psit1 {
-                padding-top: 70px;
+                padding-top: 10px;
                 grid-column: 1/7;
                 grid-row: 3/4;
                 display: flex;
@@ -1093,7 +1093,7 @@
             }
             /*Aligns the text with the grid*/
             .psit2 {
-                padding-top: 70px;
+                padding-top: 10px;
                 grid-column: 1/7;
                 grid-row: 4/5;
                 display: flex;
@@ -1102,7 +1102,7 @@
             }
             /*Aligns the text with the grid*/
             .psit3 {
-                padding-top: 70px;
+                padding-top: 10px;
                 grid-column: 1/7;
                 grid-row: 5/6;
                 display: flex;
@@ -1111,7 +1111,7 @@
             }
             /*Aligns sketches with the grid and adds padding*/
             .pss1 {
-                padding-top: 70px;
+                padding-top: 10px;
                 padding-right: 10px;
                 grid-column: 1/7;
                 grid-row: 6/7;
@@ -1138,13 +1138,13 @@
             }
             /*Aligns the image with the grid*/
             .psicon {
-                padding-top: 70px;
+                padding-top: 10px;
                 grid-column: 1/7;
                 grid-row: 10/11;
             }
             /*Aligns the button with the grid*/
             .button {
-                padding-top: 70px;
+                padding-top: 10px;
                 grid-column: 1/7;
                 grid-row: 11/12;
                 display: flex;
@@ -1153,7 +1153,7 @@
             }
             /*Aligns the image with the grid*/
             .merch {
-                padding-top: 70px;
+                padding-top: 10px;
                 grid-column: 1/7;
                 grid-row: 13/14;
             }
