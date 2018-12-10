@@ -203,12 +203,103 @@
         /*Documenrtation page*/
         /*Aligns content with the grid a well as uses padding to move the content to the center*/
 
-        .doc {
+        .doc1 {
+            padding-top: 40px;
             grid-column: 2/6;
-            grid-row: 1/1;
-            line-height: 34px;
-            padding-top: 135px;
-            padding-bottom: 155px;
+            grid-row: 1/2;
+        }
+        /*Aligns test to the grid*/
+
+        .doc2 {
+            grid-column: 2/6;
+            grid-row: 2/3;
+        }
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .doc3 {
+            grid-column: 2/4;
+            grid-row: 3/4;
+            padding-right: 10px;
+        }
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .doc4 {
+            grid-column: 4/6;
+            grid-row: 3/4;
+            padding-left: 10px;
+        }
+
+        .doc5 {
+            grid-column: 2/6;
+            grid-row: 4/5;
+        }
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .doc6 {
+            grid-column: 2/4;
+            grid-row: 5/6;
+            padding-right: 10px;
+        }
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .doc7 {
+            grid-column: 4/6;
+            grid-row: 5/6;
+            padding-left: 10px;
+        }
+        /*Aligns test to the grid*/
+
+        .doc8 {
+            grid-column: 2/6;
+            grid-row: 6/7;
+        }
+        /*Aligns test to the grid*/
+
+        .doc9 {
+            grid-column: 2/6;
+            grid-row: 7/8;
+        }
+        /*Makes links centered*/
+
+        .doclist {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 30px;
+        }
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .doc10 {
+            grid-column: 2/4;
+            grid-row: 8/9;
+            padding-right: 10px;
+        }
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .doc11 {
+            grid-column: 4/6;
+            grid-row: 8/9;
+            padding-left: 10px;
+        }
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .doc12 {
+            grid-column: 2/4;
+            grid-row: 9/10;
+            padding-right: 10px;
+        }
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .doc13 {
+            grid-column: 4/6;
+            grid-row: 9/10;
+            padding-left: 10px;
+        }
+        /*Aligns test to the grid*/
+
+        .doc14 {
+            grid-column: 2/6;
+            grid-row: 10/11;
         }
         /*Portfolio pages*/
         /*Centers text*/
@@ -831,14 +922,80 @@
             }
             /*Documenrtation page*/
             /*Aligns content with the grid a well as uses padding to move the content to the center*/
-            .doc {
-                grid-column-start: 1;
-                grid-column-end: 7;
-                grid-row-start: 1;
-                grid-row-end: 1;
-                line-height: 34px;
-                padding-top: 80px;
-                padding-bottom: 80px;
+            .doc1 {
+                grid-column: 1/7;
+                grid-row: 1/2;
+            }
+            /*Aligns test to the grid*/
+            .doc2 {
+                grid-column: 1/7;
+                grid-row: 2/3;
+            }
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+            .doc3 {
+                grid-column: 1/7;
+                grid-row: 3/4;
+            }
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+            .doc4 {
+                grid-column: 1/7;
+                grid-row: 4/5;
+            }
+            .doc5 {
+                grid-column: 1/7;
+                grid-row: 5/6;
+            }
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+            .doc6 {
+                grid-column: 1/7;
+                grid-row: 6/7;
+            }
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+            .doc7 {
+                grid-column: 1/7;
+                grid-row: 7/8;
+            }
+            /*Aligns test to the grid*/
+            .doc8 {
+                grid-column: 1/7;
+                grid-row: 8/9;
+            }
+            /*Aligns test to the grid*/
+            .doc9 {
+                grid-column: 1/7;
+                grid-row: 9/10;
+            }
+            /*Makes links centered*/
+            .doclist {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 30px;
+            }
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+            .doc10 {
+                grid-column: 1/7;
+                grid-row: 10/11;
+            }
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+            .doc11 {
+                grid-column: 1/7;
+                grid-row: 11/12;
+            }
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+            .doc12 {
+                grid-column: 1/7;
+                grid-row: 12/13;
+            }
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+            .doc13 {
+                grid-column: 1/7;
+                grid-row: 13/14;
+            }
+            /*Aligns test to the grid*/
+            .doc14 {
+                grid-column: 1/7;
+                grid-row: 14/15;
             }
             /*Portfolio pages*/
             /*Adds line height*/
