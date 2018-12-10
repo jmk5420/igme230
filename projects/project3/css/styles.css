@@ -617,37 +617,37 @@
                 width: 100vw;
                 grid-template-columns: 1fr 5fr 5fr 1fr;
             }
+            /*Moves the postions to help with the moblie version*/
             .flex-right {
                 display: none;
                 align-content: center;
-                padding: 12px 50px 0 0;
+                padding: 15px 50px 0 0;
             }
+            /*Moves the postions to help with the moblie version*/
             .menu {
                 display: inline;
-                padding-right: 10px;
+                padding-right: 20px;
             }
+            /*Moves the postions to help with the moblie version*/
             .menutog {
                 padding-top: 15px;
             }
+            /*Moves the postions to help with the moblie version*/
             .menuitem {
                 background-color: #e0e0e0;
                 padding: 5px;
                 z-index: 2;
             }
-            .container {
-                display: grid;
-                width: 100vw;
-                grid-template-rows: auto;
-                grid-template-columns: 1fr;
-                padding: 0 5px 0 5px;
-            }
+            /*Moves the postions to help with the moblie version*/
             .flex-left {
                 display: inline-flex;
                 padding-left: 10px;
             }
+            /*Moves the postions to help with the moblie version*/
             #footer-flex {
                 padding-left: 10px;
             }
+            /*Moves the postions to help with the moblie version*/
             #footer-icon {
                 padding-right: 10px;
             }
@@ -693,6 +693,14 @@
                 color: #E95353;
                 border-bottom: 2px solid #E95353;
                 font-weight: 700;
+            }
+            /*Makes mobile grid*/
+            .container {
+                display: grid;
+                width: 100vw;
+                grid-template-rows: auto;
+                grid-template-columns: 1fr;
+                padding: 0 5px 0 5px;
             }
             /*Moves the logo to be aligned with the nav text*/
             .logo {
