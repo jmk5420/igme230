@@ -1,0 +1,146 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section,
+header,
+footer {
+    padding: .5rem;
+}
+
+.menu {
+    width: 100%;
+    padding: .5rem;
+    background-color: #aaa;
+    margin: 1px;
+}
+
+.submenu {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    background-color: #eee;
+    padding-left: .5rem;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+#pagegrid {
+    display: grid;
+    grid-template-columns: 200px 2fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 30px;
+    width: 95%;
+    max-width: 1100px;
+    min-height: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    background-color: lavenderblush;
+}
+
+#story {
+    grid-column: 2/2;
+    grid-row: 2/4;
+    background-color: lightcyan;
+}
+
+#source {
+    grid-column: 3/3;
+    grid-row: 2/3;
+    background-color: lightsalmon;
+}
+
+#extracredit {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    text-align: center;
+    background-color: white;
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+li:hover {
+    background-color: lightpink;
+    cursor: pointer;
+    color: magenta;
+}
+
+@media screen and (max-width: 760px) {
+    #wrapper {
+        width: auto;
+        max-width: 100%;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        height: 80px;
+    }
+    #story {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        height: auto;
+    }
+    #source {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        height: auto;
+    }
+    #extracredit {
+        grid-column: 1/4;
+        grid-row: 4/5;
+        height: auto;
+    }
+    nav {
+        grid-column: 1/4;
+        grid-row: 5/6;
+        height: auto;
+    }
+    footer {
+        grid-column: 1/4;
+        grid-row: 6/7;
+        height: 30px
+    }
+}
