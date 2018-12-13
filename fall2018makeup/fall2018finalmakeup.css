@@ -87,6 +87,7 @@ nav {
     grid-column: 3/4;
     grid-row: 3/4;
     text-align: center;
+    padding-top: 50px;
     background-color: white;
 }
 
